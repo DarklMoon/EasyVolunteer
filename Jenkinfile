@@ -36,7 +36,7 @@ pipeline {
         stage('Clear Docker Components') {
             steps {
                 script {
-                    sh 'docker-compose down'  // Stops and removes containers, networks
+                    sh 'docker-compose down'
                     sh 'docker system prune -af'
                 }
             }
