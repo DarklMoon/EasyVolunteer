@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        // Define variables Test
+        // Define variables Test-00
         DOCKER_IMAGE       = ‘darklmoon/fastapi-webhook:latest'
         DOCKER_CREDENTIALS = credentials('dockerhub')
     }
