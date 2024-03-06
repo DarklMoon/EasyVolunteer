@@ -17,7 +17,7 @@ pipeline {
 
         stage('Build Docker Image with Compose') {
             steps {
-                dir(‘./) {
+                dir('./') {
                     sh 'echo "Running in $(pwd)"'
                     sh 'docker-compose build'
                 }
